@@ -1302,6 +1302,11 @@ a.black:link {
    width: 100%;
   }
 
+  ul.menu span,
+  ul.menu a {
+  	padding-left: 0;
+  }
+
   ul.menu li:first-child {
   	margin-top: 10px;
   }
