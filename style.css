@@ -1303,6 +1303,10 @@ a.black:link {
 		display: none;
 	}
 
+	.menu-trigger {
+		margin-bottom: 30px;
+	}
+
 	ul.menu li {
    display: block;
    text-align: center;
