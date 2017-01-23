@@ -39,8 +39,8 @@ body {
 	line-height: 16.5pt;
 	font-family: 'Trebuchet MS', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: black;
-	max-width: 1200px;
-	min-width: 1000px;
+	max-width: 100%;
+	width: 1200px;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
@@ -50,6 +50,10 @@ body {
 	-moz-border-radius: 5.5pt; -webkit-border-radius: 5.5pt; -khtml-border-radius: 5.5pt; border-radius: 5.5pt;
 }
 
+.container {
+	min-width: 100%;
+	max-width: 1200px;
+}
 .body {
 	padding: 2em 2em 104.5pt 2em;
 }
@@ -1343,8 +1347,8 @@ a.black:link {
 		padding: 0;
 	}
 
-	body {
-		min-width: 320px;
+	body {	
+		width: 320px;
 		background: #fff;
 	}
 
