@@ -1,0 +1,309 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<meta name="description" content="…" />
+	<meta name="keywords" content="Фотошоп, Photoshop, фотография, уроки, создание эффектов" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="alternate" type="application/rss+xml" title="Новые материалы" href="/rss/" />
+	<title>Тёплая атмосфера в лесу · «Мир Фотошопа»</title>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="/scripts/formsubmit.js"></script>
+	<script type="text/javascript" src="/scripts/script.js?14"></script>
+	<script src="http://ulogin.ru/js/ulogin.js"></script>
+	<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+	<script type="text/javascript">VK.init({apiId: 2997872, onlyWidgets: true});</script>
+	<!--[if lte IE 6]><script type="text/javascript" src="http://enoughie6.com/enough.js"></script><![endif]-->
+</head>
+<body>
+
+	<div id="dlyavorov"></div>
+
+	<div class="hidden" id="sms"></div>
+	<div class="body">
+		<noindex><div class="above" id="auth_form" style="display: none;">
+			<h2 class="bmargin">Вход через социальные сети:</h2>
+			<div id="uLogin" x-ulogin-params="display=panel;fields=first_name,last_name,photo,email;providers=vkontakte,twitter,facebook,google,odnoklassniki,mailru,yandex,livejournal;hidden=other;redirect_uri=http%3A%2F%2Fphotoshopworld.ru%2Fulogin%2Flessons%2F795-warm-atmosphere-effect-to-a-forest-image%2F"></div>
+			<h2 class="bmargin">Вход старым способом для зарегистрированных пользователей:</h2>
+			<form action="#" method="post" onsubmit="return authorize();" onkeydown="checkAuthForm();" onmouseover="checkAuthForm();">
+				<h4 class="notmargin">Почта</h4>
+				<div><input id="auth_email" type="text" size="48" maxlength="48" class="max" /></div>
+				<h4>Пароль</h4>
+				<div><input id="auth_password" type="password" size="48" maxlength="48" class="max" /></div>
+				<div class="tspace"><input id="auth_submit" type="submit" value="Войти" disabled="disabled" /> <input id="reset_submit" type="button" value="Выслать новый пароль на почту" disabled="disabled" onclick="resetPassword();" /> <input type="button" value="Закрыть окно" onclick="authShowHide();" /></div>
+			</form>
+		</div>
+		<div class="above" id="reg_form" style="display: none;">
+			<form action="#" method="post" onsubmit="return register();" onkeydown="checkRegForm();" onmouseover="checkRegForm();">
+				<h4>Отображаемое имя</h4>
+				<div><input id="reg_username" type="text" class="max" /></div>
+				<h4>Почта</h4>
+				<div><input id="reg_email" type="text" maxlength="48" class="max" /></div>
+				<h4>Пароль</h4>
+				<div><input id="reg_password" type="password" maxlength="48" value="" class="max" /></div>
+				<h4>Код защиты</h4>
+				<div><img id="captcha_img" src="/captcha/captcha.php?838063997" alt="Код защиты" style="vertical-align: -5px; border: 1px solid silver" /> <input id="reg_captcha" type="text" maxlength="5" class="fifty" /></div>
+				<div class="tspace"><input id="reg_submit" type="submit" value="Зарегистрироваться" disabled="disabled" /> <input type="button" value="Закрыть окно" onclick="regShowHide();" /></div>
+			</form>
+		</div></noindex>	
+		<div class="logotype">
+			<img class="logo-photoshop" alt="Мир Фотошопа: уроки по Photoshop, создание эффектов в Фотошоп" src="img/logotype.gif">		
+			<span class="rfloat">
+				<a href="https://avenda.ru/?utm_source=photoshopworld&utm_medium=banner&utm_term=avenda&utm_campaign=avenda">
+					<img src="img/avenda.png">
+				</a>		
+			</span>
+		</div>
+		<nav>
+			<a class="menu-trigger">
+				<i></i>
+				<i></i>
+				<i></i>
+				Menu
+			</a>
+			<ul class="menu">
+				<li>
+					<a href="/">Заглавная</a>
+				</li>
+				<li>
+					<a href="/lessons/" class="active">Уроки</a>
+				</li>
+				<li>
+					<a href="/publications/">Публикации</a>
+				</li>
+				<li>
+					<a href="/competitions/">Конкурсы</a>
+				</li>
+				<li>
+					<a href="/qa/">ЧаВо</a>
+				</li>
+				<li>
+					<a href="/glossary/">Глоссарий</a>
+				</li>
+				<li>
+					<a href="/forums/">Форумы</a>
+				</li>
+				<li>
+					<a href="/#/" onclick="return authShowHide();">Войти <img src="img/vkontakte.png" class="s16" /> <img src="img/twitter.png" class="s16" /> <img src="img/facebook.png" class="s16" /> …</a>
+				</li>
+			</ul>	
+		</nav>	
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+			window.___gcfg = {lang: 'ru'};
+			(function() {
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/plusone.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			})();
+		</script>
+		<script type="text/javascript">
+			var begun_auto_pad = 223631368;
+			var begun_block_id = 223632062;
+		</script>
+		<script src="http://autocontext.begun.ru/autocontext2.js" type="text/javascript"></script>
+		<div class="colomns">
+			<div class="content">
+				<h1>Тёплая атмосфера в лесу</h1>
+				<div class="tspace bgap italic"><span title="Редакция от 11 января 2017">11 января 2017 &middot; <a href="/lessons/authors/732/">Глеб Х.</a></span> &middot; «<a href="http://photoshopworld.ru/">Мир Фотошопа</a>»</div>
+				<div id="hypercontext"><index>
+					<h2>Конечный результат:</h2>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 1</h2>
+					<p>Откройте <a href="https://pixabay.com/en/green-park-season-nature-outdoor-1072828/">фотографию леса</a> в Фотошопе.</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 2</h2>
+					<p>Сперва улучшим общие цвета фотографии. Создайте корректирующий слой Gradient Map и выберите градиент, показанный на скриншоте. Установите режим наложения Soft Light и уменьшите непрозрачность до 63%. На фотографии появится слабое усиление контрастности и приятный тёплый эффект.</p>
+
+					<p>Использование корректирующих слоёв — лучший способ изменения цвета и света на изображении. Причина, по которой мы не используем прямые коррекции (меню Image → Adjustments) в том, что они меняют непосредственно пиксели изображения и в дальнейшем их нельзя будет вернуть в прежний вид. Корректирующие слои позволяют нам отменить цветовые настройки, либо изменить их в любой момент.</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 3</h2>
+					<p>Сейчас мы сделаем цвета фотографии более схожими друг с другом. Это нужно для правильной работы корректирующих слоёв. Если цвета будут сильно отличаться, то мы получим нежелательные артефакты.</p>
+
+					<p>Создайте корректирующий слой Color Balance с такими параметрами:</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 4</h2>
+					<p>Дайте немного осветлим изображение. Создайте корректирующий слой Levels:</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 5</h2>
+					<p>Теперь мы добавим больше цветового разнообразия. Создайте новый слой (Ctrl + Shift + Alt + N). Возьмите инструмент Gradient Tool (G): <span style="border-color: #c91cae;" class="colorBox">#c91cae</span> — <span style="border-color: #d1a328;" class="colorBox">#d1a328</span>. Протяните градиент сверху вниз, удерживая Shift.</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 6</h2>
+					<p>Установите режим наложения градиентного слоя на Soft Light, и Вы увидите, как улучшится насыщенность цвета.</p>
+
+					<p>Благодаря режимам наложения можно добиваться интересных цветовых эффектов. Корректирующий слой Gradient Map в сочетании с режимом наложения Soft light может кардинально менять цвета фотографии. Слой Black & White в сочетании с режимами Soft Light или Overlay затемнит изображение или повысит контрастность. Нет конкретных инструкций по использованию режимов наложения. Вам нужно экспериментировать с ними и решать, нравиться ли Вам результат.</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 7</h2>
+					<p>Сведите все слои (Ctrl + Shift + Alt + E) и к полученному примените фильтр Gaussian Blur (Filter → Blur → Gaussian Blur) со значением 22.3 пикселя. Изображение станет сильно размытым и непригодным, но на следующим шаге Вы увидите, как сработают режимы наложения, чтобы извлечь из этого выгоду.</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 8</h2>
+					<p>Установите режим наложения Hard Light и увидите, как сильно повысится насыщенность цвета и контрастность. Такой приём можно использовать во многих случаях, особенно, если Вам нужно получить мягкий сказочный эффект. Такой эффект актуален для фотографий влюбленных или групп людей.</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 9</h2>
+					<p>У нас получился очень красивый эффект, но мне кажется, что некоторые области слишком контрастные. Деревья стали очень красными, будто произошла цветовая аномалия. Нужно немного ослабить эффект. Лучше всего для этого подойдёт пиксельная маска. Рисуя на ней чёрным цветом, мы скроем содержимое слоя, а рисуя белым — проявим его.</p>
+
+					<p>Добавьте маску мягкой кистью закрасьте слишком контрастные участки.</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 10</h2>
+					<p>Давайте добавим ещё больше контраста. Сведите все слои (Ctrl + Shift + Alt + E) и примените фильтр Gaussian Blur (Filter → Blur → Gaussian Blur) со значением 10 пикселей. Установите режим наложения Soft Light и уменьшите непрозрачность до 46%.</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 11</h2>
+					<p>Снова добавим общий цвет. Создайте корректирующий слой Photo Filter:</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Шаг 12</h2>
+					<p>В завершение мы создадим виньетирование. Создайте новый слой и залейте его белым цветом. Примените фильтр Lens Correction (Filter → Lens Correction). После настройки фильтра установите режим наложения Multiply, чтобы убрать белый цвет и оставить только черный.</p>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>
+
+					<h2>Конечный результат:</h2>
+
+					<div class="pic"><img src="img/1.jpg" alt="" /></div>				</index></div>
+					<div class="box">
+						<p class="nobmargin small"></p>
+					</div>
+					<h1>Поделитесь уроком</h1>
+					<div class="vspace">
+						<a href="http://twitter.com/home?status=Тёплая атмосфера в лесу — http://photoshopworld.ru/lessons/795/" title="Поделиться ссылкой в Твиттер"><img src="img/facebook.png" alt="Чириканье" /></a>
+						<a href="http://connect.mail.ru/share?share_url=http://photoshopworld.ru/lessons/795/" title="Поделиться ссылкой в Моём Мире"><img src="img/facebook.png" alt="Мыло" /></a>
+						<a href="http://vkontakte.ru/share.php?url=http://photoshopworld.ru/lessons/795/" title="Поделиться ссылкой на Вконтакте"><img src="img/facebook.png" alt="Вконтактик" /></a>
+						<a href="http://www.facebook.com/sharer.php?u=http://photoshopworld.ru/lessons/795/" title="Поделиться ссылкой на Facebook"><img src="img/facebook.png" alt="Рожи" /></a>
+						<a href="http://www.livejournal.com/update.bml?subject=Тёплая атмосфера в лесу&amp;event=http://photoshopworld.ru/lessons/795/" title="Поделиться ссылкой в ЖЖ"><img src="img/facebook.png" alt="ЖэЖэ" /></a>
+						<a href="http://my.ya.ru/posts_add_link.xml?title=Тёплая атмосфера в лесу&amp;URL=http://photoshopworld.ru/lessons/795/" title="Поделиться ссылкой на Я.ру"><img src="img/facebook.png" alt="Яша" /></a>
+					</div>
+					<div class="max tspace"><div class="stylized">
+						<div id="vk_like" class="lfloat"></div>
+						<div class="fb-like" data-send="false" data-layout="button_count" data-width="150" data-show-faces="true" data-font="trebuchet ms"></div>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ru">Твитнуть</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						<!-- Place this tag where you want the +1 button to render -->
+						<g:plusone size="medium"></g:plusone>
+						<!-- Put this div tag to the place, where the Like block will be -->
+						<script type="text/javascript">
+							VK.Widgets.Like("vk_like", {type: "button"});
+						</script>
+					</div></div>
+					<h1>Правовая информация</h1>
+					<p class="nomargin">В случае копирования урока указывайте автора и ставьте активную гиперссылку на наш сайт. Более подробную информацию вы можете получить в разделе «<a href="/information/copyrights/">Правовая информация</a>».</p>
+					<p>Переведено с сайта <a href="https://photoshopstar.com/photo-effects/warm-atmosphere-effect-to-a-forest-image/" rel="nofollow">https</a>, автор перевода указан в начале урока.</p>							</div>
+					<div class="features">
+						<div class="feature">
+							<div><script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+
+								<!-- VK Widget -->
+								<div id="vk_groups"></div>
+								<script type="text/javascript">
+									VK.Widgets.Group("vk_groups", {mode: 0, width: "240", height: "290"}, 26307100);
+								</script></div>
+							</div>
+							<div class="feature none"></div>
+							<div class="feature none"><div><!-- Яндекс.Директ -->
+							<script type="text/javascript">
+//<![CDATA[
+yandex_partner_id = 58257;
+yandex_site_bg_color = 'FFFFFF';
+yandex_site_charset = 'utf-8';
+yandex_ad_format = 'direct';
+yandex_font_size = 1;
+yandex_direct_type = 'vertical';
+yandex_direct_limit = 9;
+yandex_direct_header_bg_color = '6666CC';
+yandex_direct_title_color = '000099';
+yandex_direct_url_color = '000099';
+yandex_direct_all_color = '000000';
+yandex_direct_text_color = '000000';
+yandex_direct_hover_color = '6666CC';
+yandex_direct_favicon = true;
+document.write('<sc'+'ript type="text/javascript" src="http://an.yandex.ru/system/context.js"></sc'+'ript>');
+//]]>
+</script></div>
+</div>
+<div class="feature">
+	<h1>«<a href="/lessons/editing/">Обработка фото, создание фотоэффектов</a>»</h1>
+	<ul class="nomargin withmargin rposition">
+		<li><a href="/lessons/51/">Быстрая цветокоррекция</a> <small>6 марта 2010</small></li>
+		<li><a href="/lessons/721-photoshop-tutorial-how-to-create-a-frosty-effect-on-eyes/">Морозный эффект на глазах</a> <small>10 января 2016</small></li>
+		<li><a href="/lessons/702-create-3-easy-pixelation-effects-in-photoshop/">3 простых пиксельных эффекта</a> <small>6 ноября 2015</small></li>
+		<li><a href="/lessons/521-3-photo-effects-wedding-photographers/">3 фотоэффекта для свадебных фотографов</a> <small>27 мая 2013</small></li>
+		<li><a href="/lessons/768-surreal-kaleidoscope-portrait-photoshop-tutorial/">Сюрреалистичный портер-калейдоскоп</a> <small>20 июля 2016</small></li>
+	</ul>
+</div>
+<div class="feature">
+	<h1>Избранное</h1>
+	<ul class="nomargin withmargin rposition">
+		<li><a href="/lessons/179/">Как вырезать в Фотошопе?</a></li>
+		<li><a href="/lessons/60/">Как вырезать человека в Фотошопе?</a></li>
+		<li><a href="/lessons/96/">Эффект свечения в Фотошопе.</a></li>
+		<li><a href="/lessons/70/">Как вставить одно фото в другое?</a></li>
+	</ul>
+</div>
+</div>
+</div></div>
+<div class="footer">
+	<div class="bspace calign">
+		<form action="https://www.google.ru/search" method="GET">
+			<input type="text" name="as_q" size="48" placeholder="Поиск по сайту" id="searchQuery" />
+			<input type="hidden" name="hl" value="ru" />
+			<input type="hidden" name="as_sitesearch" value="photoshopworld.ru" />
+			<input type="submit" value="Найти" />
+		</form>
+	</div>
+	<ul class="bmenu"><li><a href="/feedback/" class="accent">Обратная связь</a></li><li><a href="/information/">Информация</a></li><li><a href="/users/">Пользователи</a></li><li><a href="/services/">Услуги</a></li><li><a href="/information/ad/">Размещение рекламы</a></li><li><a href="/downloads/">Файлы</a></li><li><a href="/links/">Ссылки</a></li></ul>
+	<p class="calign small">© 2000—2017 «Мир Фотошопа» &middot; Создание сайта — <a href="http://egetmanenko.ru/" rel="nofollow">Е. Гетманенко</a></p>
+</div><!--noindex-->
+<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter456159 = new Ya.Metrika({id:456159, enableAll: true, trackHash:true, webvisor:true}); } catch(e) {} }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/456159" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">//<![CDATA[
+	var a='';js=10;d=document;
+	try{a+=';r='+escape(d.referrer);}catch(e){}try{a+=';j='+navigator.javaEnabled();js=11;}catch(e){}
+	try{s=screen;a+=';s='+s.width+'*'+s.height;a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;}catch(e){}
+	try{if(typeof((new Array).push('t'))==="number")js=13;}catch(e){}
+	try{d.write('<a href="http://top.mail.ru/jump?from=112275"><img src="http://d6.cb.b1.a0.top.mail.ru/counter?id=112275;js='+js+
+	a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" style="border:0;" height="1" width="1" \/><\/a>');}catch(e){}//]]></script>
+	<noscript><p><a href="http://top.mail.ru/jump?from=112275"><img src="http://d6.cb.b1.a0.top.mail.ru/counter?js=na;id=112275"
+		style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" /></a></p></noscript>
+		<!-- //Rating@Mail.ru counter -->
+		<!--LiveInternet counter--><script type="text/javascript"><!--
+		new Image().src = "//counter.yadro.ru/hit?r"+
+		escape(document.referrer)+((typeof(screen)=="undefined")?"":
+			";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+				screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+				";"+Math.random();//--></script><!--/LiveInternet-->
+				<!-- begin of Top100 code --><div class="hidden"><script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2313932"></script></div><!-- end of Top100 code -->
+				<!--/noindex-->
+				<script src="js/menu.js"></script>
+			</body>
+			</html>
