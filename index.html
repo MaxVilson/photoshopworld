@@ -1,0 +1,307 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<meta name="description" content="Обучение работе в программе Adobe Photoshop: уроки по рисованию и созданию эффектов, ответы на вопросы, форумы, публикации и свежие новости." />
+	<meta name="keywords" content="Фотошоп, Photoshop, фотография, уроки, создание эффектов" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="alternate" type="application/rss+xml" title="Новые материалы" href="/rss/" />
+	<title>«Мир Фотошопа» · Уроки по Photoshop, создание эффектов, обучение, форум</title>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="/scripts/formsubmit.js"></script>
+	<script type="text/javascript" src="/scripts/script.js?14"></script>
+	<script src="http://ulogin.ru/js/ulogin.js"></script>
+	<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+	<script type="text/javascript">VK.init({apiId: 2997872, onlyWidgets: true});</script>
+	<!--[if lte IE 6]><script type="text/javascript" src="http://enoughie6.com/enough.js"></script><![endif]-->
+</head>
+<body>
+
+	<div id="dlyavorov"></div>
+
+	<div class="hidden" id="sms"></div>
+	<div class="body">
+		<noindex><div class="above" id="auth_form" style="display: none;">
+			<h2 class="bmargin">Вход через социальные сети:</h2>
+			<div id="uLogin" x-ulogin-params="display=panel;fields=first_name,last_name,photo,email;providers=vkontakte,twitter,facebook,google,odnoklassniki,mailru,yandex,livejournal;hidden=other;redirect_uri=http%3A%2F%2Fphotoshopworld.ru%2Fulogin%2F"></div>
+			<h2 class="bmargin">Вход старым способом для зарегистрированных пользователей:</h2>
+			<form action="#" method="post" onsubmit="return authorize();" onkeydown="checkAuthForm();" onmouseover="checkAuthForm();">
+				<h4 class="notmargin">Почта</h4>
+				<div><input id="auth_email" type="text" size="48" maxlength="48" class="max" /></div>
+				<h4>Пароль</h4>
+				<div><input id="auth_password" type="password" size="48" maxlength="48" class="max" /></div>
+				<div class="tspace"><input id="auth_submit" type="submit" value="Войти" disabled="disabled" /> <input id="reset_submit" type="button" value="Выслать новый пароль на почту" disabled="disabled" onclick="resetPassword();" /> <input type="button" value="Закрыть окно" onclick="authShowHide();" /></div>
+			</form>
+		</div>
+		<div class="above" id="reg_form" style="display: none;">
+			<form action="#" method="post" onsubmit="return register();" onkeydown="checkRegForm();" onmouseover="checkRegForm();">
+				<h4>Отображаемое имя</h4>
+				<div><input id="reg_username" type="text" class="max" /></div>
+				<h4>Почта</h4>
+				<div><input id="reg_email" type="text" maxlength="48" class="max" /></div>
+				<h4>Пароль</h4>
+				<div><input id="reg_password" type="password" maxlength="48" value="" class="max" /></div>
+				<h4>Код защиты</h4>
+				<div><img id="captcha_img" src="/captcha/captcha.php?1084275391" alt="Код защиты" style="vertical-align: -5px; border: 1px solid silver" /> <input id="reg_captcha" type="text" maxlength="5" class="fifty" /></div>
+				<div class="tspace"><input id="reg_submit" type="submit" value="Зарегистрироваться" disabled="disabled" /> <input type="button" value="Закрыть окно" onclick="regShowHide();" /></div>
+			</form>
+		</div></noindex>	
+		<div class="logotype">
+			<img class="logo-photoshop" alt="Мир Фотошопа: уроки по Photoshop, создание эффектов в Фотошоп" src="img/logotype.gif">		
+			<span class="rfloat">
+				<a href="https://avenda.ru/?utm_source=photoshopworld&utm_medium=banner&utm_term=avenda&utm_campaign=avenda">
+					<img src="img/avenda.png">
+				</a>		
+			</span>
+		</div>
+		<nav>
+			<a class="menu-trigger">
+				<i></i>
+				<i></i>
+				<i></i>
+				Menu
+			</a>
+			<ul class="menu">
+				<li>
+					<span>Заглавная</span>
+				</li>
+				<li>
+					<a href="/lessons/">Уроки</a>
+				</li>
+				<li>
+					<a href="/publications/">Публикации</a>
+				</li>
+				<li>
+					<a href="/competitions/">Конкурсы</a>
+				</li>
+				<li>
+					<a href="/qa/">ЧаВо</a>
+				</li>
+				<li>
+					<a href="/glossary/">Глоссарий</a>
+				</li>
+				<li>
+					<a href="/forums/">Форумы</a>
+				</li>
+				<li>
+					<a href="/#/" onclick="return authShowHide();">Войти <img src="img/vkontakte.png" class="s16" /> <img src="img/twitter.png" class="s16" /> <img src="img/facebook.png" class="s16" /> …</a>
+				</li>
+			</ul>	
+		</nav>
+		<div class="colomns gutters-none">
+			<div class="bi">
+				<div class="canvas"><div class="box">
+					<h1><a href="/lessons/795-warm-atmosphere-effect-to-a-forest-image/">Тёплая атмосфера в лесу</a></h1>
+					<p class="pubdata"><small class="nowrap">11 января &middot; Глеб Х. &middot; Уроки</small></p>
+					<div class="pic"><a href="/lessons/795/"><img src="img/final.jpg" alt="" /></a></div>
+
+					<p> В этом уроке мы создадим тёплую солнечную атмосферу на фотографии при помощи фильтров Фотошопа.</p>			</div></div>
+					<div class="canvas"><div class="box">
+						<h1><a href="/lessons/793-create-an-apocalypse-angel-scene-with-photoshop/">Апокалиптическая сцена с ангелом в Фотошопе</a></h1>
+						<p class="pubdata"><small class="nowrap">8 января &middot; Глеб Х. &middot; Уроки</small></p>
+						<div class="pic"><a href="/lessons/793/"><img src="img/final (1).jpg" alt="" /></a></div>
+
+						<p>В этом уроке мы создадим апокалиптическую сцену с ангелом-воителем.</p>			</div></div>
+					</div><div class="bi">						<div class="canvas"><div class="box">
+					<h1><a href="/lessons/796-create-a-christmas-tree-photoshop-text-effect/">Текст в стиле рождественской ёлки</a></h1>
+					<p class="pubdata"><small class="nowrap">2 января &middot; Глеб Х. &middot; Уроки</small></p>
+					<div class="pic"><a href="/lessons/796/"><img src="img/final (2).jpg" alt="" /></a></div>
+
+					<p>В этом уроке мы создадим рождественский текст, сложенный из веток ели.</p>			</div></div>
+					<div class="canvas"><div class="box">
+						<h1><a href="/lessons/794-christmas-ornament-in-photoshop/">Узор на ёлочном шаре в Фотошопе</a></h1>
+						<p class="pubdata"><small class="nowrap">27 декабря 2016 &middot; Глеб Х. &middot; Уроки</small></p>
+						<div class="pic"><a href="/lessons/794/"><img src="img/final (3).jpg" alt="" /></a></div>
+
+						<p>В этом уроке мы создадим рождественские елочные шары с красивым узором.</p>			</div></div>
+					</div><div class="bi">						<div class="canvas"><div class="box">
+					<h1><a href="/lessons/792-christmas-fantasy-tale-photoshop-manipulation-tutorial/">Волшебство на рождественской открытке</a></h1>
+					<p class="pubdata"><small class="nowrap">25 декабря 2016 &middot; Глеб Х. &middot; Уроки</small></p>
+					<div class="pic"><a href="/lessons/792/"><img src="img/final (4).jpg" alt="" /></a></div>
+
+					<p>В этом уроке мы создадим волшебную рождественскую открытку.</p>			</div></div>
+					<div class="canvas"><div class="box">
+						<h1><a href="/lessons/791-how-to-change-season-autumn-effect-in-photoshop/">Смена сезона в Фотошопе</a></h1>
+						<p class="pubdata"><small class="nowrap">20 декабря 2016 &middot; Глеб Х. &middot; Уроки</small></p>
+						<div class="pic"><a href="/lessons/791/"><img src="img/compare.jpg" alt="" /></a></div>
+
+						<p>В этом уроке Вы увидите, как можно быстро и просто изменить весеннее время года на осеннее.</p>			</div></div>
+					</div>
+				</div>
+				<div class="colomns colomns-links gutters-canvas vspace">
+					<div class="bi">
+						<div class="canvas">
+							<div class="box">
+								<p class="nobmargin large"><a href="/lessons/digests/">Все уроки</a></p>
+							</div>
+						</div>
+						<div class="canvas">
+							<div class="box">
+								<p class="nobmargin ralign large"><a href="/publications/digests/">Все публикации</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="colomnswithgutters">
+					<div class="c12">
+						<div class="canvas">
+							<table class="tbl" border="0" cellspacing="0">
+								<tr><td colspan="3"><h2 class="tspace bmargin">Новые сообщения на форуме</h2></td></tr>
+								<tr>
+									<td class="calign"><a href="/forums/260/">не подходит серийный номер</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers"><a href="/forums/260/replies/" class="pale" rel="nofollow">1&nbsp;ответ</a></td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/262/">Светлый изумительный коллаж</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers"><a href="/forums/262/replies/" class="pale" rel="nofollow">1&nbsp;ответ</a></td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/264/">Акварельный рисунок оленя</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers"><a href="/forums/264/replies/" class="pale" rel="nofollow">1&nbsp;ответ</a></td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/266/">Помогите решить проблему с толщиной текста в png</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers silver">Нет ответов</td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/265/">Фоторедактор на русском языке</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers silver">Нет ответов</td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/263/">Услуги фотошопа</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers silver">Нет ответов</td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/261/">Кто может помочь создать карту?</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers"><a href="/forums/261/replies/" class="pale" rel="nofollow">1&nbsp;ответ</a></td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/259/">Создание значка для видео на Youtube</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers silver">Нет ответов</td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/258/">Как эффективно контролировать работу сотрудников?</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers silver">Нет ответов</td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/257/">Космическая сцена «Дрейф в космосе»</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers silver">Нет ответов</td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/254/">Замена цвета и пикселов символами</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers"><a href="/forums/254/replies/" class="pale" rel="nofollow">1&nbsp;ответ</a></td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/256/">Удаление / обесцвечивание водяного знака</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers silver">Нет ответов</td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/255/">СОЗДАНИЕ ВИЗИТКИ!!!</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers silver">Нет ответов</td>
+								</tr>
+								<tr>
+									<td class="calign"><a href="/forums/252/">Нам требуется дизайнер (только клевый!)</a></td>
+									<td width="15">&middot;</td>
+									<td class="answers silver">Нет ответов</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="c3">
+						<div class="canvas"><div class="box">
+							<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+
+							<!-- VK Widget -->
+							<div id="vk_groups"></div>
+							<script type="text/javascript">
+								VK.Widgets.Group("vk_groups", {mode: 0, width: "240", height: "290"}, 26307100);
+							</script>			</div></div>
+						</div>
+					</div>
+					<div class="colomns gutters-box vspace">
+						<div class="bi">
+							<div class="canvas">
+								<div class="box">
+									<h2>Ответы на вопросы</h2>
+									<ul class="withmargin nobmargin">					<li><a href="/qa/45/">Как убрать надпись с фотографии?</a></li>
+										<li><a href="/qa/7/">Как склеить вместе несколько изображений?</a></li>
+										<li><a href="/qa/38/">Как изменить цвет глаз, автомобиля, волос, накрасить губы и т.д.?</a></li>
+										<li><a href="/qa/46/">Как вставить лицо в фотографию?</a></li>
+										<li><a href="/qa/5/">Как научиться делать красивые вещи в Photoshop (рамки, крылья, обрабатывать фото)?</a></li>
+										<li><a href="/qa/9/">Как сделать так, чтобы картинка плавно переходила в фон?</a></li>
+										<li><a href="/qa/3/">Как изменить фон?</a></li>
+										<li><a href="/qa/4/">У меня Фотошоп на русском, не могли бы вы писать названия инструментов и пунктов меню на русском?</a></li>
+									</ul>
+									<p class="nobmargin small"><a href="/qa/">Список всех вопросов</a> →</p>
+								</div>
+								<div class="box">
+									<p class="nobmargin small"></p>
+								</div>
+							</div>
+						</div>
+						<div class="bi">
+							<div class="canvas"><div class="box">
+								<p class="nobmargin small">Качественная <a href="http://www.russianpromo.ru/" rel="noindex nofollow">поисковая оптимизация сайта</a> от компании Russian Promo.</p>
+							</div>
+							<div class="box">
+								<h2>Описания терминов по Фотошопу</h2>
+								<p><a href="/glossary/red-eye-tool/" class="em">Red Eye Tool</a> — инструмент для удаления эффекта красных глаз человека, который получается в результате фотосъёмки со вспышкой. Принцип работы инструмента заключается в создании выделенной области вокруг красного глаза. Также можно работать одиночными кликами. &lt;..&gt;</p>
+								<p><a href="/glossary/patch-tool/" class="em">Patch Tool</a> — инструмент клонирования при помощи выделенной области. Принцип работы заключается в том, что сначала нужно создать выделенную область и потом переместить её в то место, которое нужно заполнить выделенным участком, либо в то место, которое должно заполнить выделенный участок (в зависимости от параметров инструмента). &lt;..&gt;</p>
+							</div>
+							<div class="box">
+								<p class="nobmargin small"></p>
+							</div>
+						</div>
+					</div>
+				</div></div>
+				<div class="footer">
+					<div class="bspace calign">
+						<form action="https://www.google.ru/search" method="GET">
+							<input type="text" name="as_q" size="48" placeholder="Поиск по сайту" id="searchQuery" />
+							<input type="hidden" name="hl" value="ru" />
+							<input type="hidden" name="as_sitesearch" value="photoshopworld.ru" />
+							<input type="submit" value="Найти" />
+						</form>
+					</div>
+					<ul class="bmenu"><li><a href="/feedback/" class="accent">Обратная связь</a></li><li><a href="/information/">Информация</a></li><li><a href="/users/">Пользователи</a></li><li><a href="/services/">Услуги</a></li><li><a href="/information/ad/">Размещение рекламы</a></li><li><a href="/downloads/">Файлы</a></li><li><a href="/links/">Ссылки</a></li></ul>
+					<p class="calign small">© 2000—2017 «Мир Фотошопа» &middot; Создание сайта — <a href="http://egetmanenko.ru/" rel="nofollow">Е. Гетманенко</a></p>
+				</div><!--noindex-->
+				<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter456159 = new Ya.Metrika({id:456159, enableAll: true, trackHash:true, webvisor:true}); } catch(e) {} }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/456159" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+				<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">//<![CDATA[
+	var a='';js=10;d=document;
+	try{a+=';r='+escape(d.referrer);}catch(e){}try{a+=';j='+navigator.javaEnabled();js=11;}catch(e){}
+	try{s=screen;a+=';s='+s.width+'*'+s.height;a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;}catch(e){}
+	try{if(typeof((new Array).push('t'))==="number")js=13;}catch(e){}
+	try{d.write('<a href="http://top.mail.ru/jump?from=112275"><img src="http://d6.cb.b1.a0.top.mail.ru/counter?id=112275;js='+js+
+	a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" style="border:0;" height="1" width="1" \/><\/a>');}catch(e){}//]]></script>
+	<noscript><p><a href="http://top.mail.ru/jump?from=112275"><img src="http://d6.cb.b1.a0.top.mail.ru/counter?js=na;id=112275"
+		style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" /></a></p></noscript>
+		<!-- //Rating@Mail.ru counter -->
+		<!--LiveInternet counter--><script type="text/javascript"><!--
+		new Image().src = "//counter.yadro.ru/hit?r"+
+		escape(document.referrer)+((typeof(screen)=="undefined")?"":
+			";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+				screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+				";"+Math.random();//--></script><!--/LiveInternet-->
+				<!-- begin of Top100 code --><div class="hidden"><script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2313932"></script></div><!-- end of Top100 code -->
+				<!--/noindex-->
+				<script src="js/menu.js"></script>
+			</body>
+			</html>
