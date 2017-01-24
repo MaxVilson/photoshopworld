@@ -1298,8 +1298,8 @@ a.black:link {
 		top: 40%;
 	}
 
-	nav .menu {
-		display: none;
+	.menu {
+		display: none;outline: 1px solid red;
 	}
 
 	.menu-trigger {
