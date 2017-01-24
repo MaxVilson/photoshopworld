@@ -1352,7 +1352,8 @@ a.black:link {
   }
 
   .feature {
-		margin: 0;
+  	margin: 0;
+		margin-top: 1em;
   }
 	
 	.features .none {
@@ -1455,6 +1456,14 @@ a.black:link {
 		width: 100%;
 	}
 
+	.canvas .box {
+		margin-top: 1em;
+	}
+
+	.gutters-box .bi:nth-child(2n+1) .canvas .box {
+		margin-right: 0;
+	}
+
 	.gutters-canvas .bi .canvas:nth-child(odd) .box {
 		margin-right: 0;
 		text-align: center;
@@ -1480,20 +1489,25 @@ a.black:link {
 		float: none;
 	}
 
-
 	.colomnswithgutters .c12 .canvas,
 	.colomnswithgutters .c12 .canvas,
 	.gutters-box .bi:nth-child(2n) .canvas .box {
 		margin-left: 0;
 	}
-	
-	.gutters-box .bi:nth-child(2n+1) .canvas .box,
-	.gutters-box .bi:nth-child(2n) .canvas .box {
+
+	.box-none {
 		display: none;
 	}
 
 	#searchQuery {
 		max-width: 100%;
+	}
+
+	div.pics img {
+		display: block;
+		max-width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
 	}
 }
 

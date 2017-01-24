@@ -1,0 +1,413 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<meta name="description" content="Обучение работе в программе Adobe Photoshop: уроки по рисованию и созданию эффектов, ответы на вопросы, форумы, публикации и свежие новости." />
+	<meta name="keywords" content="Фотошоп, Photoshop, фотография, уроки, создание эффектов" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="alternate" type="application/rss+xml" title="Новые материалы" href="/rss/" />
+	<title>Уроки из раздела «Фотоманипуляции, коллаж» · «Мир Фотошопа»</title>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="/scripts/formsubmit.js"></script>
+	<script type="text/javascript" src="/scripts/script.js?14"></script>
+	<script src="http://ulogin.ru/js/ulogin.js"></script>
+	<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+	<script type="text/javascript">VK.init({apiId: 2997872, onlyWidgets: true});</script>
+	<!--[if lte IE 6]><script type="text/javascript" src="http://enoughie6.com/enough.js"></script><![endif]-->
+</head>
+<body>
+
+	<div id="dlyavorov"></div>
+
+	<div class="hidden" id="sms"></div>
+	<div class="body">
+		<noindex><div class="above" id="auth_form" style="display: none;">
+			<h2 class="bmargin">Вход через социальные сети:</h2>
+			<div id="uLogin" x-ulogin-params="display=panel;fields=first_name,last_name,photo,email;providers=vkontakte,twitter,facebook,google,odnoklassniki,mailru,yandex,livejournal;hidden=other;redirect_uri=http%3A%2F%2Fphotoshopworld.ru%2Fulogin%2Flessons%2Fcollage%2F"></div>
+			<h2 class="bmargin">Вход старым способом для зарегистрированных пользователей:</h2>
+			<form action="#" method="post" onsubmit="return authorize();" onkeydown="checkAuthForm();" onmouseover="checkAuthForm();">
+				<h4 class="notmargin">Почта</h4>
+				<div><input id="auth_email" type="text" size="48" maxlength="48" class="max" /></div>
+				<h4>Пароль</h4>
+				<div><input id="auth_password" type="password" size="48" maxlength="48" class="max" /></div>
+				<div class="tspace"><input id="auth_submit" type="submit" value="Войти" disabled="disabled" /> <input id="reset_submit" type="button" value="Выслать новый пароль на почту" disabled="disabled" onclick="resetPassword();" /> <input type="button" value="Закрыть окно" onclick="authShowHide();" /></div>
+			</form>
+		</div>
+		<div class="above" id="reg_form" style="display: none;">
+			<form action="#" method="post" onsubmit="return register();" onkeydown="checkRegForm();" onmouseover="checkRegForm();">
+				<h4>Отображаемое имя</h4>
+				<div><input id="reg_username" type="text" class="max" /></div>
+				<h4>Почта</h4>
+				<div><input id="reg_email" type="text" maxlength="48" class="max" /></div>
+				<h4>Пароль</h4>
+				<div><input id="reg_password" type="password" maxlength="48" value="" class="max" /></div>
+				<h4>Код защиты</h4>
+				<div><img id="captcha_img" src="/captcha/captcha.php?15694275" alt="Код защиты" style="vertical-align: -5px; border: 1px solid silver" /> <input id="reg_captcha" type="text" maxlength="5" class="fifty" /></div>
+				<div class="tspace"><input id="reg_submit" type="submit" value="Зарегистрироваться" disabled="disabled" /> <input type="button" value="Закрыть окно" onclick="regShowHide();" /></div>
+			</form>
+		</div></noindex>	
+		<div class="header-wrapper">
+			<div class="logotype">
+				<img alt="Мир Фотошопа: уроки по Photoshop, создание эффектов в Фотошоп" src="img/logotype.gif">		
+			</div>
+			<div class="avenda">
+				<a href="https://avenda.ru/?utm_source=photoshopworld&utm_medium=banner&utm_term=avenda&utm_campaign=avenda">
+					<img src="img/avenda.png">
+				</a>		
+			</div>
+			<nav>
+				<a class="menu-trigger">
+					<i></i>
+					<i></i>
+					<i></i>
+					Menu
+				</a>
+				<ul class="menu">
+					<li>
+						<span>Заглавная</span>
+					</li>
+					<li>
+						<a href="lessons.html">Уроки</a>
+					</li>
+					<li>
+						<a href="/publications/">Публикации</a>
+					</li>
+					<li>
+						<a href="/competitions/">Конкурсы</a>
+					</li>
+					<li>
+						<a href="/qa/">ЧаВо</a>
+					</li>
+					<li>
+						<a href="/glossary/">Глоссарий</a>
+					</li>
+					<li>
+						<a href="/forums/">Форумы</a>
+					</li>
+					<li>
+						<a href="/#/" onclick="return authShowHide();">Войти <img src="img/vkontakte.png" class="s16" /> <img src="img/twitter.png" class="s16" /> <img src="img/facebook.png" class="s16" /> …</a>
+					</li>
+				</ul>	
+			</nav>
+		</div>				
+		<div class="colomns">
+			<div class="content">
+				<h1>Фотоманипуляции, коллаж</h1>
+				<p class="bgap">Приёмы, способы, свежие идеи совмещения нескольких изображений в одно для создания коллажа.</p>			<ul class="withmargin nomargin"><li><a href="lesson.html">Апокалиптическая сцена с ангелом в Фотошопе</a></li>
+				<li><a href="/lessons/792-christmas-fantasy-tale-photoshop-manipulation-tutorial/">Волшебство на рождественской открытке</a></li>
+				<li><a href="/lessons/786-create-a-fantasy-snail-photo-manipulation-with-photoshop/">Сцена с улиткой в стиле Fantasy</a></li>
+				<li><a href="/lessons/783-enchanted-halloween-pumpkin-photoshop-tutorial/">Магическая тыква на Хэллоуин</a></li>
+				<li><a href="/lessons/784-create-a-colorful-emotional-rainy-scene-with-photoshop/">Драматическая сцена «Девушка под дождём»</a></li>
+				<li><a href="/lessons/778-create-city-flame-digital-montage-photoshop/">Тёмная иллюстрация «Город в огне»</a></li>
+				<li><a href="/lessons/777-httpsdesigntutspluscomtutorialscreate-a-dark-gothic-portrait-photo-manipulation-with-photoshop-cms-27066/">Тёмный готический коллаж</a></li>
+				<li><a href="/lessons/770-create-an-abstract-portrait-photo-manipulation-with-adobe-photoshop/">Абстрактный портрет в Фотошопе</a></li>
+				<li><a href="/lessons/765-create-ship-fleet-under-sea-monster-attack-scene-in-photoshop/">Битва с морским чудовищем</a></li>
+				<li><a href="/lessons/767-how-to-create-a-moonlight-scene-photo-manipulation-with-adobe-photoshop/">Коллаж «Ночь у озера»</a></li>
+				<li><a href="/lessons/764-create-poster-design-abstract-effects-photoshop/">Постер с абстрактными эффектами</a></li>
+				<li><a href="/lessons/763-create-dark-matte-landscape-composite-photoshop/">Фантастическая местность в горах</a></li>
+				<li><a href="/lessons/758-create-an-epic-war-zone-scene-in-photoshop/">Сцена эпической битвы</a></li>
+				<li><a href="/lessons/755-color-splash-spring-fantasy-photoshop-manipulation-tutorial/">Весеннее волшебство</a></li>
+				<li><a href="/lessons/757-how-to-create-a-misty-landscape-photo-manipulation-with-adobe-photoshop/">Как создать туманный ландшафт в Фотошопе</a></li>
+				<li><a href="/lessons/756-create-awesome-underwater-scene-depicting-dragon-treasure-hunter/">Коллаж «Охота за сокровищами»</a></li>
+				<li><a href="/lessons/747-photo-manipulationhow-to-create-a-human-portrait-of-a-dog-in-photoshop/">Человеческий образ собаки в Фотошопе</a></li>
+				<li><a href="/lessons/746-photo-manipulation-inspired-by-quantum-break-game-box-art/">Абстрактный коллаж в стиле «Quantum Break»</a></li>
+				<li><a href="/lessons/744-childhood-end-the-last-days-on-earth-photoshop-tutorialaspx/">Коллаж «Последние дни на Земле глазами ребёнка»</a></li>
+				<li><a href="/lessons/745-create-a-surreal-photo-manipulation-of-a-man-watching-a-magical-sky/">Коллаж «Магия в небе»</a></li>
+				<li><a href="/lessons/740-create-a-mystical-photo-manipulation-of-the-great-ragnarok-in-photoshop/">Мистическая сцена Рагнарека</a></li>
+				<li><a href="/lessons/736-photo-manipulationhow-to-create-a-surreal-space-scene-in-photoshop/">Космический сюрреалистичный постер</a></li>
+				<li><a href="/lessons/737-emotional-photo-manipulation/">Эмоциональная сцена в Фотошопе</a></li>
+				<li><a href="/lessons/727-create-racing-vertical-digital-art-photoshop/">Коллаж «Гонки по вертикали»</a></li>
+				<li><a href="/lessons/733-create-drift-in-space-digital-art-in-photoshop/">Космическая сцена «Дрейф в космосе»</a></li>
+				<li><a href="/lessons/731-fantasy-angel-scene-in-photoshop/">Необычайно красивый ангел на скале</a></li>
+				<li><a href="/lessons/726-chinese-monkey-year-text-effect-in-photoshop/">Текстовый эффект на год обезьяны</a></li>
+				<li><a href="/lessons/723-create-dance-on-fire-scene-in-photoshop/">Пламенный коллаж «Танец в огне»</a></li>
+				<li><a href="/lessons/719-photoshop-tutorial-ring-in-the-new-year-with-cute-furry-cats/">Новогодняя открытка с пушистыми кошками</a></li>
+				<li><a href="/lessons/720-filter-effect-create-a-space-art-scene-using-photoshop-techniques/">Сцена в космосе средствами Фотошопа</a></li>
+				<li><a href="/lessons/713-stargate-ori-character-brought-to-life-in-photoshop/">Живой представитель расы Орай в Фотошопе</a></li>
+				<li><a href="/lessons/714-create-an-aquatic-photo-manipulation-of-a-giant-tortoise/">Таинственный остров «Гигантская черепаха»</a></li>
+				<li><a href="/lessons/715-photoshop-tutorial-create-a-deer-watercolor-artwork/">Акварельный рисунок оленя</a></li>
+				<li><a href="/lessons/707-photo-manipulate-yourself-into-a-drawing/">Как нарисовать себя в Фотошопе</a></li>
+				<li><a href="/lessons/711-how-to-create-a-magical-photo-manipulation/">Волшебная сцена с девушкой</a></li>
+				<li><a href="/lessons/710-tutorial-how-to-design-a-cool-sci-fi-scene/">Постер в стиле Sci-Fi</a></li>
+				<li><a href="/lessons/704-learn-how-to-mix-fire-and-rain-effects/">Огонь и дождь на одной сцене</a></li>
+				<li><a href="/lessons/699-emotional-cemetery-ghost-photoshop-manipulation-tutorial/">Эмоциональная сцена с призраком на кладбище</a></li>
+				<li><a href="/lessons/701-create-a-polaroid-collage-in-photoshop/">Коллаж из снимков Polaroid</a></li>
+				<li><a href="/lessons/698-create-magnificent-sniper-artwork-photoshop/">Эффектная сцена &quot;Снайпер на крыше&quot;</a></li>
+				<li><a href="/lessons/700-how-to-create-a-high-energy-dance-scene/">Яркая сцена &quot;Энергичный танец&quot;</a></li>
+				<li><a href="/lessons/696-create-magical-emotional-forest-scene-lost-girl-photoshop/">Эмоциональная сцена в волшебном лесу</a></li>
+				<li><a href="/lessons/692-create-firing-medieval-scene-disintegration-effect/">Огненная средневековая сцена</a></li>
+				<li><a href="/lessons/694-create-a-relaxing-vibrant-fantasy-lake-scene-with-adobe-photoshop/">Успокаивающая сцена на озере</a></li>
+				<li><a href="/lessons/688-how-to-create-a-beautiful-underwater-surreal-scene-in-photoshop/">Подводная сюрреалистичная сцена</a></li>
+				<li><a href="/lessons/687-create-colourful-distorted-text-effect-photoshop/">Цветной текст из бумаги</a></li>
+				<li><a href="/lessons/689-create-escape-from-hell-digital-art-in-photoshop/">Огненная сцена «Побег из ада»</a></li>
+				<li><a href="/lessons/686/">Яркое изображение жизни на планете</a></li>
+				<li><a href="/lessons/683-photo-manipulationcreate-animal-portrait-photoshop/">Агрессивный образ человека</a></li>
+				<li><a href="/lessons/677-mix-photos-seamlessly-to-create-a-bright-brilliant-photomontage/">Светлый изумительный коллаж</a></li>
+				<li><a href="/lessons/663-clouds-to-an-empty-sky/">Как добавить облака на чистое небо</a></li>
+				<li><a href="/lessons/672-create-surreal-artwork-tree-moons-photoshop/">Сюрреалистичное лунное дерево</a></li>
+				<li><a href="/lessons/676-create-abstract-medical-image-dna-photoshop/">Абстрактное изображение молекулы ДНК</a></li>
+				<li><a href="/lessons/648-create-surreal-floating-tree-ocean-photoshop/">Парящее дерево посреди океана</a></li>
+				<li><a href="/lessons/652-create-a-bird-out-of-water-using-photoshop-liquify-and-free-transform/">Создание птицы из воды</a></li>
+				<li><a href="/lessons/655-create-a-taylor-swift-style-inspired-double-exposure-effect-in-photoshop/">Эффект двойной экспозиции в стиле Taylor Swift</a></li>
+				<li><a href="/lessons/643-blend-retro-modern-in-photoshop/">Ретро фотоколлаж</a></li>
+				<li><a href="/lessons/634-create-dreamlike-photo-manipulation-emotional-girl-dramatic-lighting-photoshop/">Эмоциональная сцена в лесу с красивым светом</a></li>
+				<li><a href="/lessons/633-create-stone-face-wrapped-tree-roots-photoshop/">Каменное лицо на корнях дерева</a></li>
+				<li><a href="/lessons/630-create-a-digital-handicraft-collage-in-adobe-photoshop/">Аппликация на Хэллоуин в Фотошопе</a></li>
+				<li><a href="/lessons/632-create-unique-hair-style-leaves-texture-photoshop/">Уникальные волосы из листьев</a></li>
+				<li><a href="/lessons/626-create-an-underwater-beauty-in-photoshop/">Подводная красота</a></li>
+				<li><a href="/lessons/625-create-fantasy-moon-night-emotional-manipulation-photoshop/">Эмоциональная сцена при свете Луны</a></li>
+				<li><a href="/lessons/623-create-a-dark-photo-manipulation-of-a-young-witch-in-a-forest/">Молодая ведьма в лесу</a></li>
+				<li><a href="/lessons/622-create-an-epic-godzilla-inspired-movie-poster-in-adobe-photoshop/">Постер к фильму «Годзилла»</a></li>
+				<li><a href="/lessons/629-halloween-night-witch-photoshop-manipulation-tutorial/">Сцена с ведьмой в тёмном лесу на Хэллоуин</a></li>
+				<li><a href="/lessons/620-create-dynamic-night-club-poster-photoshop/">Динамичный ночной постер</a></li>
+				<li><a href="/lessons/624-create-vivid-arabian-night-composite-photoshop/">Светлая арабская ночь</a></li>
+				<li><a href="/lessons/611-create-a-photo-manipulation-of-a-lonely-child-in-photoshop/">Трогательная картина «Одинокий ребёнок»</a></li>
+				<li><a href="/lessons/615-create-beautiful-moonlight-angel-photo-composite/">Красивый ангел под лунным светом</a></li>
+				<li><a href="/lessons/604-applying-grungy-effects-into-an-image-photoshop-cs5/">Создание гранжевого эффекта для фотографии</a></li>
+				<li><a href="/lessons/607-create-stunningly-surreal-artwork-secret-temple-sky/">Таинственный замок в небесах</a></li>
+				<li><a href="/lessons/614-create-a-post-apocalyptic-movie-poster-in-adobe-photoshop-and-indesign/">Пост-апокалиптический постер в Photoshop и InDesign</a></li>
+				<li><a href="/lessons/583-create-amazing-artwork-great-enchantress-photoshop/">Удивительная иллюстрация великой колдуньи</a></li>
+				<li><a href="/lessons/601-outer-space-astronaut-photoshop-manipulation-tutorial/">Космическая сцена с астронавтом</a></li>
+				<li><a href="/lessons/609-giraffe-neck-knot/">Узел из шеи жирафа</a></li>
+				<li><a href="/lessons/602-abstract-photo-manipulation-photoshop/">Абстрактная картина «Несовершенство»</a></li>
+				<li><a href="/lessons/596-create-a-beautiful-sunrise-landscape-photo-manipulation/">Красивый горный ландшафт на рассвете</a></li>
+				<li><a href="/lessons/608-photo-manipulate-a-mystical-tribal-warrior/">Воительница мистического племени</a></li>
+				<li><a href="/lessons/578-creating-a-skin-tearing-illustration-in-photoshop/">Очень эффектное раскрытие кожи тела в Фотошопе</a></li>
+				<li><a href="/lessons/597-fashion-mixed-media-portrait-in-photoshop/">Портрет в смешанном стиле</a></li>
+				<li><a href="/lessons/593-create-a-fantasy-steampunk-castle-in-photoshop/">Сцена с замком в стиле стимпанк</a></li>
+				<li><a href="/lessons/600-create-fantasy-photo-manipulation-valkyrie/">Фэнтези иллюстрация «Валькирия»</a></li>
+				<li><a href="/lessons/589-add-creepy-bugs-photos/">Удивительный мир насекомых</a></li>
+				<li><a href="/lessons/594-the-easter-bunny-photoshop-manipulation-tutorial/">Пасхальный кролик на машине-морковке</a></li>
+				<li><a href="/lessons/592-singing_apple_photoshop_tutorial/">Поющее яблоко в Фотошопе</a></li>
+				<li><a href="/lessons/568-add-mermaid-dark-bleak-landscape/">Тёмная сцена с сиреной на берегу моря</a></li>
+				<li><a href="/lessons/585-fantasy-tree-woman-scene-in-photoshop/">Фэнтези сцена с девушкой-деревом</a></li>
+				<li><a href="/lessons/566-how-to-create-a-magical-photo-manipulation-post-production-psd-36407/">Волшебство в детской комнате</a></li>
+				<li><a href="/lessons/554-create-alluring-magical-forest-photo-manipulation/">Магия в тёмном лесу</a></li>
+				<li><a href="/lessons/563-creation-thinker-photo-manipulation-photoshop/">Абстрактная картина «Мыслитель»</a></li>
+				<li><a href="/lessons/556-create-vivid-winter-aurora-landscape/">Северное сияние в горах</a></li>
+				<li><a href="/lessons/543-pushing-your-creative-imagination-how-to-create-a-successful-future-based-fantasy-photo-manipulation/">Охотница будущего</a></li>
+				<li><a href="/lessons/539-fashion-photo-manipulation/">Красочная иллюстрация с моделью</a></li>
+				<li><a href="/lessons/536-realistic-water-reflection-effect/">Как создать реалистичное отражение на воде</a></li>
+				<li><a href="/lessons/524-how-to-create-an-amazing-space-battle-scene-in-photoshop/">Подготовка к сражению в космосе</a></li>
+				<li><a href="/lessons/530-photo-manipulate-a-beautiful-snow-queen-scene/">Мистическая Снежная королева</a></li>
+				<li><a href="/lessons/513-lost-treasure-manipulation-tutorial/">Потерянное сокровище</a></li>
+				<li><a href="/lessons/509-daisy-heart-photoshop-manipulation-tutorial/">Цветочный букет в виде сердца</a></li>
+				<li><a href="/lessons/500-members-area-tutorial-design-an-advanced-retro-futuristic-photo-manipulation/">Ретро-футуристический портрет</a></li>
+				<li><a href="/lessons/507-create-a-surreal-scenic-photo-manipulation/">Сюрреалистичный коллаж с каменным лицом</a></li>
+				<li><a href="/lessons/505-create-this-stylistic-mixed-media-artwork-in-photoshop/">Коллаж при помощи смешанной техники</a></li>
+				<li><a href="/lessons/511-beginners-photo-manipulation-lesson-creating-the-piece-remnants-of-glory/">Коллаж «Остатки великолепия»</a></li>
+				<li><a href="/lessons/497-wasted-time-easy-manipulation-tutorial/">Фотоманипуляция «Упущенное время»</a></li>
+				<li><a href="/lessons/496-coming-home-photoshop-manipulation/">Фотоманипуляция «Возвращение домой»</a></li>
+				<li><a href="/lessons/494-create-a-surreal-beach-photo-manipulation-in-photoshop/">Сюрреалистичный пляж</a></li>
+				<li><a href="/lessons/493-create-a-broken-heart-island-manipulation-in-photoshop/">Остров разбитых сердец</a></li>
+				<li><a href="/lessons/489-creating-surreal-head-stack-photo-manipulation/">Сюрреалистичная картина «Стопка голов»</a></li>
+				<li><a href="/lessons/484-create-a-surreal-apocalypse-photomanipulation-photoshop-tutorial/">Сюрреалистичная картина Апокалипсиса</a></li>
+				<li><a href="/lessons/495-solitude-manipulation-tutorial/">Фотоманипуляция «Одиночество»</a></li>
+				<li><a href="/lessons/486-photo-manipulation-snowy-landscape/">Снежная пустыня</a></li>
+				<li><a href="/lessons/477-how-to-create-a-breathtaking-christmas-artwork-in-photoshop/">Завораживающая рождественская картина</a></li>
+				<li><a href="/lessons/463-create-surreal-flying-brain-photo-manipulation-photoshop/">Сюрреалистичная картина девушки на летающем мозге</a></li>
+				<li><a href="/lessons/460-members-area-tutorial-create-an-emotional-sunset-scene-photo-manipulation/">Эмоциональная сцена заката</a></li>
+				<li><a href="/lessons/454-create-mystical-rising-angel-photo-manipulation-photoshop/">Мистическая картина с парящим ангелом</a></li>
+				<li><a href="/lessons/452-how-to-create-a-surreal-photo-manipulation-of-the-eiffel-tower/">Сюрреалистичная фото манипуляция с Эйфелевой башней</a></li>
+				<li><a href="/lessons/462-photoshop-halloween-demon/">Ужасный демон с тыквой</a></li>
+				<li><a href="/lessons/450-photo-manipulate-an-eerie-grim-reaper-scene-in-photoshop/">Смерть с косой на повозке</a></li>
+				<li><a href="/lessons/459-create-a-queen-in-the-dark-night-photo-manipulation/">Преследуемая девушка в ночи</a></li>
+				<li><a href="/lessons/424-madagascar-photo-manipulation/">Фотомонтаж «Мадагаскар»</a></li>
+				<li><a href="/lessons/431-learn-how-to-design-a-charming-collage-composition/">Цветочный коллаж с девушкой</a></li>
+				<li><a href="/lessons/430-create-a-frozen-scene-inspired-by-qthe-day-after-tomorrowq/">Мир во льду</a></li>
+				<li><a href="/lessons/421-photo-manipulate-an-abstract-miniature-city-wildlife-scene/">Абстрактная картина с миниатюрным городом</a></li>
+				<li><a href="/lessons/420-learn-matte-painting-basics-to-create-a-dramatic-lake-view-photo-manipulation-in-photoshop/">Коллаж Matte Painting. Создание ночной сцены у озера</a></li>
+				<li><a href="/lessons/418-spirit-of-dove/">Дух в виде голубя</a></li>
+				<li><a href="/lessons/401-create-an-amazingly-punchy-artwork-in-photoshop/">Девушка с оружием</a></li>
+				<li><a href="/lessons/417-create-a-dark-creepy-movie-poster/">Тёмный постер триллера</a></li>
+				<li><a href="/lessons/408-how-to-create-a-grim-reaper-scene-artwork-in-photoshop/">Иллюстрация Смерти в пустыне</a></li>
+				<li><a href="/lessons/409-how-to-create-an-outdoor-fantasy-manipulation-in-photoshop/">Сказочная картина у водопада</a></li>
+				<li><a href="/lessons/414-how-to-create-a-magical-underwater-scene-with-photoshop/">Создаем волшебную подводную картину</a></li>
+				<li><a href="/lessons/405-out-of-paper-photoshop-effect/">Прыжок дельфинов</a></li>
+				<li><a href="/lessons/404-smokin-hot-babe-tutorial-literally/">Дымящаяся девушка</a></li>
+				<li><a href="/lessons/394-creating-a-dream-land/">Создаем волшебный мир грез с помощью Photoshop</a></li>
+				<li><a href="/lessons/402-design-a-unique-wooden-face-with-fiery-eye-and-tear-in-photoshop/">Деревянное лицо с огненными глазами</a></li>
+				<li><a href="/lessons/396-create-this-heaven-a-hell-photo-manipulation/">Фотопревращение «Рай и ад»</a></li>
+				<li><a href="/lessons/386-poster-earth-hourphoto-manipulate-an-eye-catching-poster-design-for-earth-hour/">Часы Земли</a></li>
+				<li><a href="/lessons/395-photo-manipulate-a-surreal-coffee-machine-contraption/">Сюрреалистичная кофе-машина</a></li>
+				<li><a href="/lessons/389-how-to-create-a-baby-alien-in-a-jar/">Инопланетянин в резервуаре</a></li>
+				<li><a href="/lessons/387-liquid-human-effect/">Водяной человек</a></li>
+				<li><a href="/lessons/385-surreal-poster-in-the-style-of-dark-art/">Сюрреалистичный постер в стиле Dark Art</a></li>
+				<li><a href="/lessons/382-dazzling-dance-photo-manipulation/">Ослепительная картина с танцором</a></li>
+				<li><a href="/lessons/379-create-an-impressive-mock-up-of-a-grunge-box/">Создание деревянной коробки в гранжевом стиле</a></li>
+				<li><a href="/lessons/392-create-a-vibrant-conceptual-photo-manipulation-in-photoshop/">Создание яркой концептуальной фотоманипуляции</a></li>
+				<li><a href="/lessons/377-use-photo-manipulation-and-3d-layers-to-design-a-surreal-cover-art-illustration/">Создание обложки для диска</a></li>
+				<li><a href="/lessons/370-create-this-magical-light-beam-photo-manipulation-in-photoshop/">Магический световой луч</a></li>
+				<li><a href="/lessons/373-serene-fantasy-photo-manipulation/">Тихая река возле гор</a></li>
+				<li><a href="/lessons/374-create-the-emotional-photo-manipulation-firing-heart/">Создаем эмоциональную фотоманипуляцию «Огненное сердце»</a></li>
+				<li><a href="/lessons/372-grunge-stone-woman-photo-manipulation-in-photoshop/">Гранжевая каменная девушка</a></li>
+				<li><a href="/lessons/371-how-to-create-a-vintage-style-zombie-movie-poster/">Постер фильма про зомби в стиле винтаж</a></li>
+				<li><a href="/lessons/361-create-a-dramatic-building-explosion-scene/">Эффектный взрыв здания</a></li>
+				<li><a href="/lessons/294/">Апокалиптическая фотоманипуляция</a></li>
+				<li><a href="/lessons/347/">Летающий гиппопотам</a></li>
+				<li><a href="/lessons/346/">Страшная картина с привидением</a></li>
+				<li><a href="/lessons/344/">Каменное сердце</a></li>
+				<li><a href="/lessons/364/">Заклинатель змей</a></li>
+				<li><a href="/lessons/343/">Профессиональный коллаж «Вдова»</a></li>
+				<li><a href="/lessons/337/">Винтажная рождественская открытка</a></li>
+				<li><a href="/lessons/328/">Лучник с огненной стрелой</a></li>
+				<li><a href="/lessons/355/">Эмоциональная сцена в дождливую погоду</a></li>
+				<li><a href="/lessons/326/">Небесная гавань</a></li>
+				<li><a href="/lessons/350/">Постер фильма в жанре Action</a></li>
+				<li><a href="/lessons/340/">Парящий куб</a></li>
+				<li><a href="/lessons/339/">Магический дом-ботинок</a></li>
+				<li><a href="/lessons/333/">Картина после войны</a></li>
+				<li><a href="/lessons/316/">Стильный постер с танцором</a></li>
+				<li><a href="/lessons/323/">Сюрреалистичная картина с небесным вокзалом</a></li>
+				<li><a href="/lessons/332/">Концептуальная картина прыжка со скалы</a></li>
+				<li><a href="/lessons/317/">Гранжевый скейтерский постер</a></li>
+				<li><a href="/lessons/324/">Гранжевый постер с 3D  текстом</a></li>
+				<li><a href="/lessons/331/">Фотоманипуляция «Безнадёжная девушка»</a></li>
+				<li><a href="/lessons/325/">Картина с девушкой на скале</a></li>
+				<li><a href="/lessons/330/">Картина с дымом после ядерного взрыва</a></li>
+				<li><a href="/lessons/314/">Остров в небе с драконами</a></li>
+				<li><a href="/lessons/308/">Роботизированная лошадь</a></li>
+				<li><a href="/lessons/306/">Девушка Na'vi из фильма AVATAR</a></li>
+				<li><a href="/lessons/305/">Постер с гейшей</a></li>
+				<li><a href="/lessons/303/">Абстрактная картина игральной карты</a></li>
+				<li><a href="/lessons/302/">Рекламный постер с машиной</a></li>
+				<li><a href="/lessons/301/">Космический постер</a></li>
+				<li><a href="/lessons/300/">Бейсбольная карта в стиле Vintage</a></li>
+				<li><a href="/lessons/293/">Ночная охотница</a></li>
+				<li><a href="/lessons/289/">Героическая картина</a></li>
+				<li><a href="/lessons/290/">Сюрреалистичная картина пустыни</a></li>
+				<li><a href="/lessons/288/">Драматическая картина с девушкой на фоне войны</a></li>
+				<li><a href="/lessons/287/">Сюрреалистичная картина с обнажённым телом</a></li>
+				<li><a href="/lessons/286/">Девушка в поле</a></li>
+				<li><a href="/lessons/284/">Гоночные обои</a></li>
+				<li><a href="/lessons/283/">Картина с девушкой-воином</a></li>
+				<li><a href="/lessons/279/">Обои с черепом и саблями</a></li>
+				<li><a href="/lessons/285/">Обложка для коробки с игрой на PS3</a></li>
+				<li><a href="/lessons/273/">Соблазнительная девушка на абстрактном фоне</a></li>
+				<li><a href="/lessons/270/">Картина солнцестояние в стиле сюрреализма - Часть 2</a></li>
+				<li><a href="/lessons/269/">Картина солнцестояние в стиле сюрреализма — Часть 1</a></li>
+				<li><a href="/lessons/263/">Девушка коп</a></li>
+				<li><a href="/lessons/280/">Обои фильма X-Men</a></li>
+				<li><a href="/lessons/278-photoshop-vintage-design/">Старая картина в стиле Vintage</a></li>
+				<li><a href="/lessons/282/">Абстрактный фон для девушки</a></li>
+				<li><a href="/lessons/265/">Мировая засуха</a></li>
+				<li><a href="/lessons/274/">Постер в стиле Dark Knight</a></li>
+				<li><a href="/lessons/264/">Картина со скрипачкой в стиле Fantasy</a></li>
+				<li><a href="/lessons/257/">Чёрно-белая фотография с бизнесменом</a></li>
+				<li><a href="/lessons/255/">Уникальная фото-манипуляция в стиле Steampunk</a></li>
+				<li><a href="/lessons/256/">Текст их кусочков фотографий</a></li>
+				<li><a href="/lessons/258/">Дорога домой — летняя картина с девушкой</a></li>
+				<li><a href="/lessons/259-the-secrets-of-photomanipulation-1-choosing-the-stock-images/">Секреты фото-манипуляций – Часть 1. Выбор изображений</a></li>
+				<li><a href="/lessons/253/">Тёмный таинственный портрет</a></li>
+				<li><a href="/lessons/244/">Сюрреалистичная картина пустыни</a></li>
+				<li><a href="/lessons/198-serene-fantasy-photo-manipulation/">Создание фентезийной сцены из нескольких фотографий</a></li>
+				<li><a href="/lessons/176-making-of-a-forest-magical-scene/">Создаем лесную фантазию</a></li>
+				<li><a href="/lessons/171/">Создания постера на тему «Молоко и кровь»</a></li>
+				<li><a href="/lessons/170-design-an-epic-fantasy-scene-with-photoshop/">Создание эпической картины в Фотошоп</a></li>
+				<li><a href="/lessons/164-create-an-angelic-sculpture-made-of-ice-in-photoshop/">Создаем ангельскую скульптуру изо льда в Фотошоп</a></li>
+				<li><a href="/lessons/148-create-an-action-pack-movie-scene/">Создаем кадр из боевика</a></li>
+				<li><a href="/lessons/118-design-a-grungy-floating-island/">Дизайн гранджевого островка, парящего в воздухе</a></li>
+				<li><a href="/lessons/115-making-of-the-imaginary-paint-dancers/">Создание воображаемых танцоров из разноцветной краски</a></li>
+				<li><a href="/lessons/93-mental-wave-explosion-photoshop/">Создание эффекта мощной ударной волны</a></li>
+				<li><a href="/lessons/70/">Замена лица на фотографии или как вставить одно фото в другое</a></li>
+				<li><a href="/lessons/82/">Мышь-пират, или создаем реалистичную морскую иллюстрацию с применением эффекта прозрачного стекла</a></li>
+				<li><a href="/lessons/8/">Как вставить изображение в рамку: способ 2</a></li>
+				<li><a href="/lessons/7/">Как вставить изображение в рамку: способ 1</a></li>
+			</ul>
+		</div>
+		<div class="features">
+			<div class="feature">
+				<h2>Рубрики</h2>
+				<ul class="subca">					<li>
+					Фотоманипуляции, коллаж <small>218&nbsp;уроков</small></li>
+					<li>
+						<a href="/lessons/drawing/">Рисование средствами ФШ</a>
+						<small>132</small></li>
+						<li>
+							<a href="/lessons/text-effects/">Создание текстовых эффектов</a>
+							<small>113</small></li>
+							<li>
+								<a href="/lessons/editing/">Обработка фото, создание фотоэффектов</a>
+								<small>66</small></li>
+								<li>
+									<a href="/lessons/design/">ФШ для дизайнера</a>
+									<small>64</small></li>
+									<li>
+										<a href="/lessons/effects/">Создание эффектов</a>
+										<small>50</small></li>
+										<li>
+											<a href="/lessons/dummy/">Фотошоп для чайников и начинающих</a>
+											<small>37</small></li>
+											<li>
+												<a href="/lessons/photography/">Уроки по фотографии</a>
+												<small>25</small></li>
+												<li>
+													<a href="/lessons/retouch/">Ретушь, удаление шрамов, прыщей, деталей</a>
+													<small>18</small></li>
+													<li>
+														<a href="/lessons/web-design/">Веб-дизайн</a>
+														<small>15</small></li>
+														<li>
+															<a href="/lessons/extract/">Как сменить фон, вырезать объект, про маски</a>
+															<small>14</small></li>
+															<li>
+																<a href="/lessons/pano/">Панорамная съемка, склейка фотографий</a>
+																<small>11</small></li>
+																<li>
+																	<a href="/lessons/interface/">Дизайн интерфейса</a>
+																	<small>1</small></li>
+																</ul>
+															</div>
+															<div class="feature">
+																<div><script type="text/javascript" src="http://userapi.com/js/api/openapi.js?49"></script>
+
+																	<!-- VK Widget -->
+																	<div id="vk_groups"></div>
+																	<script type="text/javascript">
+																		VK.Widgets.Group("vk_groups", {mode: 0, width: "240", height: "290"}, 26307100);
+																	</script></div>
+																</div>
+																<div class="feature">
+																	<p class="small"><a href="http://www.auchan.ru/pokupki/kuhni/kuhni-modulnie/kuhnj-venecij.html">кухни верона</a><br></p>
+																	<p class="nobmargin small"><a href="http://www.avto-start-kia.ru/models/soul/photo/">kia soul 2016 фото</a><br></p>
+																</div>
+															</div>
+														</div></div>
+														<div class="footer">
+															<div class="bspace calign">
+																<form action="https://www.google.ru/search" method="GET">
+																	<input type="text" name="as_q" size="48" placeholder="Поиск по сайту" id="searchQuery" />
+																	<input type="hidden" name="hl" value="ru" />
+																	<input type="hidden" name="as_sitesearch" value="photoshopworld.ru" />
+																	<input type="submit" value="Найти" />
+																</form>
+															</div>
+															<ul class="bmenu"><li><a href="/feedback/" class="accent">Обратная связь</a></li><li><a href="/information/">Информация</a></li><li><a href="/users/">Пользователи</a></li><li><a href="/services/">Услуги</a></li><li><a href="/information/ad/">Размещение рекламы</a></li><li><a href="/downloads/">Файлы</a></li><li><a href="/links/">Ссылки</a></li></ul>
+															<p class="calign small">© 2000—2017 «Мир Фотошопа» &middot; Создание сайта — <a href="http://egetmanenko.ru/" rel="nofollow">Е. Гетманенко</a></p>
+														</div><!--noindex-->
+														<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter456159 = new Ya.Metrika({id:456159, enableAll: true, trackHash:true, webvisor:true}); } catch(e) {} }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/456159" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+														<!-- Rating@Mail.ru counter -->
+<script type="text/javascript">//<![CDATA[
+	var a='';js=10;d=document;
+	try{a+=';r='+escape(d.referrer);}catch(e){}try{a+=';j='+navigator.javaEnabled();js=11;}catch(e){}
+	try{s=screen;a+=';s='+s.width+'*'+s.height;a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;}catch(e){}
+	try{if(typeof((new Array).push('t'))==="number")js=13;}catch(e){}
+	try{d.write('<a href="http://top.mail.ru/jump?from=112275"><img src="http://d6.cb.b1.a0.top.mail.ru/counter?id=112275;js='+js+
+	a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" style="border:0;" height="1" width="1" \/><\/a>');}catch(e){}//]]></script>
+	<noscript><p><a href="http://top.mail.ru/jump?from=112275"><img src="http://d6.cb.b1.a0.top.mail.ru/counter?js=na;id=112275"
+		style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" /></a></p></noscript>
+		<!-- //Rating@Mail.ru counter -->
+		<!--LiveInternet counter--><script type="text/javascript"><!--
+		new Image().src = "//counter.yadro.ru/hit?r"+
+		escape(document.referrer)+((typeof(screen)=="undefined")?"":
+			";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+				screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+				";"+Math.random();//--></script><!--/LiveInternet-->
+				<!-- begin of Top100 code --><div class="hidden"><script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2313932"></script></div><!-- end of Top100 code -->
+				<!--/noindex-->
+				<script src="js/menu.js"></script>
+			</body>
+			</html>
