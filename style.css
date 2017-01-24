@@ -1285,7 +1285,6 @@ a.black:link {
 	.menu-trigger {
 		display: block;
 		width: 100%;
-		text-align: right;
 	}
 
 	.menu-trigger-transform i:first-child,
